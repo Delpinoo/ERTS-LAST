@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #131313, #111);
+}
+
+.credit-card-wrapper
+{
+    position: relative;
+}
+
+.credit-card
+{
+    width: 525px;
+    height: 300px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px 20px;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.credit-card-wrapper::before,
+.credit-card-wrapper::after
+{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(57deg, #ff7a00, #ff7aff);
+    z-index: -1;
+}
+
+.credit-card-wrapper::before
+{
+    top: 0;
+    right: 0;
+    transform: translate(25%, -40%);
+}
+.credit-card-wrapper::after
+{
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    transform:  translate(-50%, 50%);
+}
+
+.credit-card .title{
+    text-transform: capitalize;
+}
+
+.credit-card .chip 
+{
+    max-height: 70px;
+    margin:  10px 0;
+}
+
+
+.credit-card .bank-name
+{
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.credit-card .card-number
+{
+    font-family: 'orbitron', sans-serif;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+
+.credit-card .validity
+{
+    text-transform: capitalize;
+    margin: 20px 0 25px;
+    display:  flex;
+    align-items: center;
+}
+
+.validity span:first-child
+{
+    margin-right: 20px;
+    line-height:  1.2;
+    text-align: right;
+}
+
+.validity span:nth-child(2)
+{
+    font-weight: 600;
+}
+
+.credit-card .holder-name
+{
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.credit-card .circles
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 50px;
+    bottom: 25px;
+}
+
+.credit-card .circles::before,
+.credit-card .circles::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+}
+
+.credit-card .circles::before
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 30%;
+}
+
+.credit-card .circles::after
+{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 15px ;
+}
+
+.input-group-name input{
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 15px ;
+}
+
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.input-group-date input{
+    width: 62px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 15px ;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+
+.navbar-nav .nav-link:hover{
+    color: red; 
+}
+
+.navbar-nav .nav-link:hover::after{
+    background-color: red; 
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+    transition: box-shadow 0.3s ease; 
+}
+
+.cardborder:hover
+{
+    box-shadow: 0 0 10px red; 
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
