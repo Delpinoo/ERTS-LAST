@@ -1,0 +1,6 @@
+.- detalles del usuario (direccion etc)
+.- agregar el gmail en la lista que ve el admin
+.- agregar "direccion" en la taba tambien 
+.- LOS PRODUCTOS SE AGREGAN CON ID
+.- validar si tiene direccion o no, y si no debe redirigir a la pagina de direccion y luego volver
+.- cuando se cree la cuenta se debe pedir el nombre completo, nombre de usuario, celular, correo, direccion, codigo postal, comuna region(sacando la API (nombres de ciudades y comunas))

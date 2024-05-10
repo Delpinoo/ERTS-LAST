@@ -36,6 +36,9 @@
                     <li>
                         <a href="mis_pedidos.html" class="nav-link">Mis pedidos</a>
                     </li>
+                    <li>
+                        <a href="direccion.html" class="nav-link">Mi dirección</a>
+                    </li>
                     <li class="nav-item">
                         <a href="carrito.html" class="nav-link">Carrito</a>
                 </ul>
@@ -44,11 +47,14 @@
     </nav>
 
     <h1 style="margin-top: 100px;">Productos</h1>
+    <h1>Perfil del Administrador</h1>
+    <h1 style="margin-top: 100px;">Inventario</h1>
     <table style="margin-top: 50px;">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nombre de Usuario</th>
+                <th>Categoria</th>
+                <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Valor</th>
                 <th>Stock</th>
@@ -56,59 +62,77 @@
         </thead>
         <tbody>
             <tr>
-                <td>10</td>
-                <td>Producto 1</td>
-                <td>Descripción del Producto 1</td>
-                <td>$50</td>
+                <td>30</td>
+                <td>Llanta</td>
+                <td>BBS</td>
+                <td>Lorem ipsum dolor sit amet consectetur </td>
+                <td>$1.250.360</td>
                 <td>10</td>
             </tr>
             <tr>
-                <td>20</td>
-                <td>Producto 2</td>
-                <td>Descripción del Producto 2</td>
-                <td>$70</td>
+                <td>50</td>
+                <td>Llanta</td>
+                <td>Wolks</td>
+                <td>Lorem ipsum dolor sit amet consectetur </td>
+                <td>$3.500.000</td>
                 <td>5</td>
             </tr>
         </tbody>
     </table>
 
-    <h1 style="margin-top: 100px;">Modificar producto</h1>
-    <table style="margin-top: 50px;">
-        <thead>
-            <tr>
-                <th>Nombre de Usuario</th>
-                <th>Descripción</th>
-                <th>Valor</th>
-                <th>Stock</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="input-group">
-                        <label for="text"></label>
-                        <input type="tex" id="name" name="name" required>
-                </td>
-                <td>
-                    <div class="input-group">
-                        <label for="text"></label>
-                        <input type="tex" id="name" name="name" required>
-                </td>
-                <td>
-                    <div class="input-group">
-                        <label for="text"></label>
-                        <input type="tex" id="name" name="name" required>
-                </td>
-                <td>
-                    <div class="input-group">
-                        <label for="text"></label>
-                        <input type="tex" id="name" name="name" required>
-                </td>
-                <td><button onclick="window.location.href='#'" style="margin-right: 10px;">Modificar</button>
-            </tr>
-        </tbody>
-    </table>
+    <h1 style="margin-top: 40px;">Modificar producto</h1>
+    <div class="container container-fluid mt-5 col-md-120">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" style="height: 110%; margin-top: -20px;">
+                    <div class="card-body">
+                        <br>
+                        <form action="index.html" method="get">
+                            <div class="row" style="height: 100px;">
+                                <div class="form-group">
+                                    <label for="nombre">ID producto:</label>
+                                    <input type="text" class="form-control" style="font-size: 14px; width: 200px;" id="id_producto" name="id_producto" required>
+                                </div>
+                                <div class="col">
+                                    <label for="apellido">Categoria:</label>
+                                    <select class="form-select" style="width: 170px;" required>
+                                        <option></option>
+                                        <option>Tubo de escape</option>
+                                        <option>Llanta</option>
+                                        <option>Sticker</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="numero">Nombre del producto:</label>
+                                    <input type="numero" class="form-control" style="font-size: 14px; width: 150px;" id="numero" name="numero" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fech">Descripcion</label>
+                                    <input type="text" class="form-control" style="font-size: 14px; width: 150px;" id="descripcion" name="descripcion" required>
+                                </div>
+                            </div>
+                                <div class="form-group">
+                                    <label for="direccion">Valor:</label>
+                                    <input type="text" class="form-control" style="font-size: 14px; width: 300px;" id="direccion" name="direccion" required>
+                                </div>
+                                <div class="col">
+                                    <label for="email">Numero de stock:</label>
+                                    <input type="number" class="form-control" style="font-size: 14px; width: 300px" id="numero_stcok" name="stock" required>
+                                </div>
+                            </div>
+                            <div class="row mt-4" style="text-align: center;">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary btn-block"  style="margin-top: -50px;">Modificar producto</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
