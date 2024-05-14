@@ -1,0 +1,13 @@
+.mapa-container {
+	width: 300px; /* Ancho del contenedor del mapa */
+	height: 200px; /* Altura del contenedor del mapa */
+	border: 1px solid #ccc; /* Borde del contenedor del mapa */
+	border-radius: 8px; /* Borde redondeado */
+	overflow: hidden; /* Oculta cualquier contenido que se desborde */
+	margin: 20px auto; /* Margen para centrar el contenedor horizontalmente */
+}
+
+.mapa {
+	width: 100%; /* Ancho del mapa */
+	height: 100%; /* Altura del mapa */
+}

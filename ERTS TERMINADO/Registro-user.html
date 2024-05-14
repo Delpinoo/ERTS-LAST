@@ -16,43 +16,51 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Registro de Usuario</h5>
                         <br>
-                        <form action="index.html" method="get">
+                        <form action="index.html" id="form-register-user" method="get">
                             <div class="row">
                                 <div class="col">
-                                    <label for="nombre">Nombre:</label>
-                                    <input type="text" class="form-control" style="font-size: 14px; width: 200px;" id="nombre" name="nombre" required>
+                                    <label for="nombre-reg">Nombre:</label>
+                                    <input type="text" class="form-control" style="font-size: 14px; width: 200px;" id="nombre-reg" name="nombre" placeholder="Ingrese su nombre" required>
+                                    <div id="error-n" style="color: red;"></div>
                                 </div>
                                 <div class="col">
-                                    <label for="apellido">Apellido:</label>
-                                    <input type="text" class="form-control" style="font-size: 14px; width: 200px;" id="apellido" name="apellido" required>
+                                    <label for="apellido-reg">Apellido:</label>
+                                    <input type="text" class="form-control" style="font-size: 14px; width: 200px;" id="apellido-reg" name="apellido" placeholder="Ingrese su apellido" required>
+                                    <div id="error-a" style="color: red;"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <label for="numero">Numero de telefono:</label>
-                                    <input type="numero" class="form-control" style="font-size: 14px; width: 150px;" id="numero" name="numero" required>
+                                    <label for="numero-reg">Numero de telefono:</label>
+                                    <input type="number" class="form-control" style="font-size: 14px; width: 150px;" id="numero-reg" name="numero" placeholder="Ingrese número" required>
+                                    <div id="error-nu" style="color: red;"></div>
                                 </div>
                                 <div class="col">
-                                    <label for="fech">Fecha de nacimiento:</label>
-                                    <input type="date" class="form-control" style="font-size: 14px; width: 150px;" id="fech" name="fech" required>
+                                    <label for="fech-reg">Fecha de nacimiento:</label>
+                                    <input type="date" class="form-control" style="font-size: 14px; width: 150px;" id="fech-reg" name="fech" required>
+                                    <div id="error-f" style="color: red;"></div>
                                 </div>
                             </div>
                                 <div class="form-group">
-                                    <label for="direccion">Direccion:</label>
-                                    <input type="text" class="form-control" style="font-size: 14px; width: 300px;" id="direccion" name="direccion" required>
+                                    <label for="direccion-reg">Direccion:</label>
+                                    <input type="text" class="form-control" style="font-size: 14px; width: 300px;" id="direccion-reg" name="direccion" placeholder="Ingrese su dirección" required>
+                                    <div id="error-d" style="color: red;"></div>
                                 </div>
                                 <div class="col">
-                                    <label for="email">Email:</label>
-                                    <input type="email" class="form-control" style="font-size: 14px; width: 300px" id="email" name="email" required>
+                                    <label for="email-reg">Email:</label>
+                                    <input type="email" class="form-control" style="font-size: 14px; width: 300px" id="email-reg" name="email" placeholder="Ingrese su correo electronico" required>
+                                    <div id="error-emial" style="color: red;"></div>
                                 </div>
                             <div class="row">
                                 <div class="col">
-                                    <label for="password">Contraseña:</label>
-                                    <input type="password" class="form-control" style="font-size: 14px; width: 250px;" id="password" name="password" required>
+                                    <label for="password-reg">Contraseña:</label>
+                                    <input type="password" class="form-control" style="font-size: 14px; width: 250px;" id="password-reg" name="password" placeholder="Ingrese contraseña" required>
+                                    <div id="error-pass" style="color: red;"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Confirme su contraseña:</label>
-                                    <input type="password" class="form-control" style="font-size: 14px; width: 250px;" id="password" name="password" required>
+                                    <label for="cpassword-reg">Confirme su contraseña:</label>
+                                    <input type="password" class="form-control" style="font-size: 14px; width: 250px;" id="cpassword-reg" name="password" placeholder="Confirme su contraseña" required>
+                                    <div id="error-cp" style="color: red;"></div>
                                 </div>
                             </div>
                             <div class="row mt-4">
@@ -65,5 +73,6 @@
                 </div>
             </div>
         </div>
+    <script src="js/registrouser.js"></script>
 </body>
 </html>

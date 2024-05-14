@@ -42,19 +42,25 @@
 
     <div class="login-container">
         <h2>Cambiar contraseña</h2>
-        <form action="index.html" method="get">
+        <!-- Necesitamos un formulario en el html para hacer las validaciones -->
+        <form action="index.html" id="form-rec-c" method="get"> <!-- Le damos una id al formulario -->
             <div class="input-group">
-                <label for="username">Contraseña Nueva: </label>
-                <input type="password" style="width: 200px;" id="password" name="password" required>
+                <label for="c-new">Contraseña Nueva: </label>
+                <input type="text" style="width: 200px;" id="c-new" placeholder="Ingrese contraseña nueva" required>
+                <!-- Aquí el id debe ser igual al texto del "for" en el labe -->
+                <div id="error-c" style="color: red;"></div>
+                <!-- Se crea un div para mostrar un mensaje de error, al que le damos un id para poder identificarlo con el js, además de aplicarle un color rojo -->
             </div>
             <div class="input-group">
-                <label for="password">Confirme la contraseña: </label>
-                <input type="password" style="width: 200px;" id="password" name="password" required>
+                <label for="c_con">Confirme la contraseña: </label>
+                <input type="text" style="width: 200px;" id="c_con" placeholder="Confirmar contraseña" required>
+                <div id="error-con" style="color: red;"></div>
             </div>
-            <button style="width: 300px; ">Cambiar mi contraseña</button>
-
+            <button type="submit" style="width: 300px; ">Cambiar mi contraseña</button>
+            <!-- El boton debe ser de tipo "submit" -->
         </form>
     </div>
+    <script src="js/validaciones.js"></script>
 </body>
 
 </html>
